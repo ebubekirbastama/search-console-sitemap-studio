@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Sitemap Studio for Search Console",
+  "short_name": "Sitemap Studio",
+  "version": "1.0.0",
+  "description": "Batch-submit sitemaps for Google Search Console properties, with confirmation checks, resume, and local logs.",
+  "permissions": ["tabs", "scripting", "storage", "alarms"],
+  "host_permissions": ["https://search.google.com/*"],
+  "action": {
+    "default_title": "Sitemap Studio",
+    "default_popup": "popup.html",
+    "default_icon": {"16":"icons/icon16.png","32":"icons/icon32.png","48":"icons/icon48.png"}
+  },
+  "background": {"service_worker":"background.js"},
+  "icons": {"16":"icons/icon16.png","32":"icons/icon32.png","48":"icons/icon48.png","128":"icons/icon128.png"}
+}
